@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Fake News Detection System</title>
+</head>
+<body style="text-align:center">
+	<header> <a href = "http://127.0.0.1:5000/">Home Page</a> </header>
+	
+	<div class = "login">
+	<h1>Fake News Detector </h1>
+	<br>
+	<p><em> The enter the news headline in this format, Newsheadline -- Source e.g <b>"2023: Wike’ll work for Tinubu, says Masari, as Atiku jets out -- vanguard"</b></em></p>
+	<form action= "/predict" method = "POST">
+		<textarea name = "news_headline" rows = "10" cols = "100" value ="{{news_headline}}" ></textarea>
+		<br>
+		<br>
+		<button style = "color: white ; background-color:blue ; height:40px; width:80px; font-size: 30;", type="submit">Predict</button>
+	</form>
+	<p>{{news_headline}}</p>
+	<p><div>{{prediction}}</div></p>
+	<br>
+
+</body>
+
+</html>
