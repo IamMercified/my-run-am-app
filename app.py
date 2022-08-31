@@ -15,7 +15,7 @@ def fake_news_det(news_headline):
 	vectorized_input_data = load_tfidf.transform([news_headline]).toarray()
 	prediction = model.predict(vectorized_input_data)
 	if prediction == 0:
-		return "This news is unverified, beware of what you feed on"
+		return "This news is unverified, beware of what action you will take on it"
 	else:
 		return "This is a verified news, follow page for more verified news"
 
